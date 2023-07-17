@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+.section{
+padding: 20px 9%;
+}
+
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 9%;
+    z-index: 2;
+    background: rgba(80, 78, 78, 0.121);
+}
+.header .logo img{
+    margin: 10px;
+height: 50px;
+}
+
+.header .navbar #close{
+    display: none;
+}
+#red:hover{
+    font-weight: 100;
+        color: #ff0000;
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px rgb(255, 77, 0),
+          0 0 82px rgb(255, 17, 0),
+          0 0 92px rgb(255, 89, 0),
+          0 0 102px rgb(255, 72, 0),
+          0 0 151px rgb(255, 60, 0);
+      
+}
+
+.header .navbar a{
+    font-size: 20px;
+    margin: 20px;
+    color: rgba(216, 225, 214, 0.989);
+}
+.header .navbar a:hover{
+    color: rgba(21, 193, 21, 0.875);
+}
+
+.header #menu{
+    display: none;
+    cursor: pointer;
+}
+/* home */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image/marvel_nike_sneakers_midjourney_5-Photom.jpg);
+}
+.home .content .title{
+    font-size: 60px;
+    color: white;
+   text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.home .content .title span #red:hover{
+    color: rgb(161, 8, 8);
+
+}
+
+
+.home .content .title span{
+    color: rgb(5, 126, 5);
+}
+.home .content .title span:hover{
+    color: rgba(174, 230, 90, 0.808);
+}
+
+.home .content .description{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(231, 223, 200);
+    text-align: center;
+    
+}
+
+.home .content
+{
+    flex:  1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .image
+{
+    flex:  1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+}
+.home .content .btn{
+    text-align: center;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem;
+    font-size: 1.7rem;
+    color: rgba(248, 247, 243, 0.993);
+    background-color: rgba(29, 158, 39, 0.63);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    transition: .4s;
+}
+.home .content .btn:hover{
+    color: rgb(3, 251, 3);
+    background-color: rgba(35, 55, 3, 0.834);
+    letter-spacing: .2rem;
+}
+.social-icons a{
+    font-size: 30px;
+    margin: 15px;
+    color: rgb(66, 161, 14);
+}
+.social-icons a:hover{
+    color: rgba(231, 10, 10, 0.656);
+    text-shadow:
+          0 0 2px #fff,
+          0 0 2px #fff,
+          0 0 11px #fff,
+          0 0 42px rgb(255, 77, 0),
+          0 0 82px rgb(255, 17, 0),
+          0 0 22px rgb(255, 89, 0),
+          0 0 52px rgb(255, 0, 0),
+          0 0 51px rgb(255, 0, 0);
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+.section{
+    padding: 2rem;
+}
+
+}
+
+@media (max-width:768px){
+
+    .header #menu{
+      display: inline-block;
+    }
+  
+    .header .navbar{
+      position: fixed;
+      top: 0; right: -105%;
+      width: 22rem;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(15px);
+      transition: .5s;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      z-index: 100;
+      
+    }
+  
+    .header .navbar.active{
+      right: 0;
+    }
+  
+    .header .navbar #close{
+      display: block;
+    }
+  
+    .header .navbar a{
+      display: block;
+      margin: 2rem 0;
+     text-align: center;
+      font-size: 19px;
+    }
+  
+    .home .content{
+      padding-top: 9.5rem;
+    }
+  
+    .home .image img{
+      width: 368px;
+    } 
+  
+    .home .content .title{
+      font-size: 4rem;
+    }
+  
+    .home .content .description{
+      font-size: 1.6rem;
+    }
+  
+  }
+  
+  @media (max-width:450px){
+    html{
+      font-size: 50%;
+    }
+  }
